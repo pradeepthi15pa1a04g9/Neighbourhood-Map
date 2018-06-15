@@ -1,0 +1,36 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<!-- <link rel="stylesheet" href="../normalize.css">
+  <link rel="stylesheet" href="../skeleton.css"> -->
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+	<title>Neighbourhood Map</title>
+</head>
+<body>
+    <!-- List view showing location names -->
+  	<!-- http://knockoutjs.com/documentation/foreach-binding.html -->
+<div id="title" class="header">
+<h1><img src="https://bit.ly/2JPV2lh"  alt="logo" class="im1"/>
+Tourist Places Of Hyderabad</h1>
+</div>
+<div class="content">
+	<div class="bar">
+		<input placeholder="Search here" data-bind="textInput: query" />
+		<ul data-bind='foreach: filteredMarkers'>
+			<b>
+				<li class='list-item' data-bind='text: name, click: onListItemClicked'></li>
+			</b>
+		</ul>
+	</div>
+	<div id="map"></div>
+</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.2/knockout-min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="app.js"></script>
+	<!-- Load google maps API -->
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKi0R9bxzSsqj-DPj8BCZugy5Wa2p9SUM&callback=initMap"></script>
+</body>
+</html>
