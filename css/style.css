@@ -44,19 +44,19 @@
 	 width: 20%;
 	 background-color: #C0C0C0;
  }
-   li {
+ li {
 	cursor:pointer;
 	
-	}
+}
 	
-	li:hover {
+li:hover {
 	color: white;
-	}
-	.im1{
-		width:50px;
-		height:50px;
-		border-radius: 5px;
-	}
+}
+.im1{
+	width:50px;
+	height:50px;
+	border-radius: 5px;
+}
 	
 
  
