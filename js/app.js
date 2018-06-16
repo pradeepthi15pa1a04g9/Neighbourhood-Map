@@ -110,7 +110,9 @@ var MapMarker = function(markerItem) {
 
     self.marker = marker;
 
-  })
+  }).fail(function() {
+    alert("Could not retrieve data....");
+  });
 };
 var onMarkerClicked = function () {
   clickAnimation( this );
@@ -161,6 +163,6 @@ function initMap() {
   ko.applyBindings( new ViewModel() );
 };
 
-function gm_authFailure() {
+function googleError() {
   alert("Google Map authorization error. Please try refreshing the page.");
 }
