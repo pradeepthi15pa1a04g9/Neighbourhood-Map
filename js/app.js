@@ -160,6 +160,7 @@ function initMap() {
   });
   ko.applyBindings( new ViewModel() );
 };
-function googleMapsError() {
-    alert("Google Maps has failed to load.");
-};
+
+function gm_authFailure() {
+  alert("Google Map authorization error. Please try refreshing the page.");
+}
